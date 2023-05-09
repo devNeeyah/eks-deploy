@@ -23,5 +23,5 @@ variable "subnet1-cidr" {
   
 }
 variable "subnet_az" {
-    default =  "us-west-1b" 
+    default =  "us-east-1b" 
 }

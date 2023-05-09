@@ -1,8 +1,5 @@
 terraform {
   required_providers {
-    helm = {
-      version = "3.11.3"
-    }
     aws = {
       source = "hashicorp/aws"
       version = "4.66.1"
@@ -29,7 +26,7 @@ resource "aws_vpc" "dev-vpc" {
 }
 
 resource "aws_subnet" "dev_subnet" {
-  vpc_id     = aws_vpc.dev.vpc.id 
+  vpc_id     = aws_vpc.dev-vpc.id 
   cidr_block = var.subnet1-cidr
   availability_zone = var.subnet_az
 
