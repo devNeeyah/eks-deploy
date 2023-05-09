@@ -1,4 +1,4 @@
-# configure kubernetes cluster setting such as the region, node type , number of nodes and kubernetes version
+# configure kubernetes cluster setting such as the region, node type, number of nodes and kubernetes version
 ## The following are to be created to use for the kubernetes cluster
 ### [x] ec2 instance and attach key pair
 ### [x] VPC, azs
