@@ -1,0 +1,9 @@
+# configure kubernetes cluster setting such as the region, node type , number of nodes and kubernetes version
+## The following are to be created to use for the kubernetes cluster
+### [x] ec2 instance and attach key pair
+### [x] VPC, azs
+### [x] public, private Subnets and an EKS cluster with worker nodes in the private subnets
+### [x] associate subnet with route table
+
+### [x] create security groups
+### [x] aws eks module to cretae kubernetes cluster and associated resources, such as, IAM roles, node group the cluster control plane, worker nodes and networking resources
