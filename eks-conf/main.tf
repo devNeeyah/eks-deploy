@@ -189,5 +189,3 @@ resource "aws_eks_node_group" "dev-nodegroup" {
     aws_iam_role_policy_attachment.AmazonEC2ContainerRegistryReadOnly,
   ]
 }
-
-
