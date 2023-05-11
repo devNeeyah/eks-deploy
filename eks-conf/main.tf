@@ -148,7 +148,7 @@ resource "aws_eks_cluster" "eks" {
     aws_iam_role_policy_attachment.AmazonEKSServicePolicy,
     aws_iam_role_policy_attachment.AmazonEKSVPCResourceController,
     aws_iam_role_policy_attachment.AmazonEKSVPCResourceController,
-    # aws_iam_role_policy_attachment.eks_cluster,
+    aws_iam_role_policy_attachment.eks_cluster,
   ]
 
   tags = {
@@ -169,7 +169,6 @@ resource "aws_eks_node_group" "dev-nodegroup" {
   instance_types = ["t2.small"]
   remote_access {
     ec2_ssh_key = "ghina-key"
-    # source_security_group_ids = [var.sg_ids]
   } 
   
   labels =  tomap({env = "dev"})
