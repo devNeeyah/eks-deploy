@@ -5,11 +5,11 @@ variable "region" {
 }
 
 variable "os_image" {
-    default = "ami-0889a44b331db0194"
+    default = "*****"
 }
 
 variable "key" {
-    default = "ghina-key"
+    default = "****"
 }
 
 variable "instance-type" {
